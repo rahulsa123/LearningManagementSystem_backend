@@ -1,12 +1,20 @@
 ## Learning Management System
 
+## heroku point
+
+    https://desolate-dusk-62730.herokuapp.com/
+
 ## prerequisite
-* in project folder<br>
+
+- in project folder<br>
+
 ```bash
   $ mkdir config
   $ touch config/default.json
 ```
-* inside default.json set
+
+- inside default.json set
+
 ```json
     {
     "jwtPrivateKey": private key,
@@ -17,6 +25,7 @@
     "api_secret": Cloudinary cloud api secrest
     }
 ```
+
 ### Api endpoint
 
 #### GET /api/users
@@ -85,35 +94,41 @@
     }
 
 #### GET /api/courses
-    return [{ course's information... }, { ...}]    
+
+    return [{ course's information... }, { ...}]
 
 #### GET /api/courses/:id
-    { 
+
+    {
         id:id
-        course's information... 
-    }    
+        course's information...
+    }
+
 #### POST /api/courses
+
     only faculty can access
-    { 
+    {
         courseName: required,
         courseDept: required,
         description: required,
         courseRoom: required,
         waitlistCapacity: required,
         courseTeam: required
-    }    
+    }
 
 #### GET /api/courses/byme
-    only faculty can access 
-    return [{ course's information... }, { ...}]    
+
+    only faculty can access
+    return [{ course's information... }, { ...}]
 
 #### GET /api/enrolled
+
     only authenticated user can access
-    return [all enrolled course]    
+    return [all enrolled course]
 
 #### Post /api/enrolled
+
     only authenticated user can access
     take :{
         courseId : required
     }
-    
