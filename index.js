@@ -10,6 +10,6 @@ require("./startup/config")();
 require("./startup/cloudConfig")();
 require("./startup/prod")(app);
 
-const port = config.get("port") || 3000;
+const port = process.env.PORT || config.get("port") || 3000;
 const server = app.listen(port, () => console.log("listening on post " + port));
 module.exports = server;
