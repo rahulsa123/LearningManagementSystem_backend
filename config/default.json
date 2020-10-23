@@ -3,6 +3,6 @@
     "db": "mongodb://localhost/LearningDB",
     "port": "3900",
     "cloud_name": "dib5hbhax",
-    "api_key": "669923688515466",
-    "api_secret": "N1WM8YgvV68AVeixAzcWCKR70rI"
+  "api_key": "669923688515466",
+  "api_secret": "N1WM8YgvV68AVeixAzcWCKR70rI"
 }
