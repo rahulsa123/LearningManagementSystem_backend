@@ -8,7 +8,7 @@ module.exports = function () {
     })
     .then(() => console.log(`Connected to ${config.get("db")}`))
     .catch(() => {
-      console.log("Could not connect to MongoDB");
+      console.log(`Could not connect to MongoDB ${config.get("db")}`);
       process.exit(1);
     });
 };
