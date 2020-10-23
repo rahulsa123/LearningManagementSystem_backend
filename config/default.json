@@ -2,7 +2,7 @@
     "jwtPrivateKey": "unsecureKey",
     "db": "mongodb://localhost/LearningDB",
     "port": "3900",
-    "cloud_name": "dib5hbhax",
-  "api_key": "669923688515466",
-  "api_secret": "N1WM8YgvV68AVeixAzcWCKR70rI"
+    "cloud_name": "",
+  "api_key": "",
+  "api_secret": ""
 }
